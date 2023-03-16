@@ -31,17 +31,17 @@ function seleccionarMascotaJugador () {
     let sectionSeleccionarAtaque = document.getElementById("seleccionar-ataque")
     sectionSeleccionarAtaque.style.display = "block"
 
-    let inputHipodoge = document.getElementById("Hipodoge")
-    let inputCapipepo = document.getElementById("Capipepo")
-    let inputRatigueya = document.getElementById("Ratigueya")
+    let inputHipodoge = document.getElementById("Master Kirby")
+    let inputCapipepo = document.getElementById("Kirby Cook")
+    let inputRatigueya = document.getElementById("Kirby Star")
     let spanMascotaJugador = document.getElementById("mascota-jugador")
 
     if (inputHipodoge.checked) {
-        spanMascotaJugador.innerHTML = "Hipodoge"
+        spanMascotaJugador.innerHTML = "Master Kirby"
     } else if (inputCapipepo.checked) {
-        spanMascotaJugador.innerHTML = "Capipepo"
+        spanMascotaJugador.innerHTML = "Kirby Cook"
     } else if (inputRatigueya.checked) {
-        spanMascotaJugador.innerHTML = "Ratigueya"
+        spanMascotaJugador.innerHTML = "Kirby Star"
     } else {
         alert("Selecciona una mascota")
     }
@@ -54,11 +54,11 @@ function seleccionarMascotaEnemigo() {
     let spanMascotaEnemigo = document.getElementById("mascota-enemigo")
 
     if (mascotaAleatoria == 1) {
-        spanMascotaEnemigo.innerHTML = "Hipodoge"
+        spanMascotaEnemigo.innerHTML = "Master Kirby"
     } else if (mascotaAleatoria == 2) {
-        spanMascotaEnemigo.innerHTML = "Capipepo"
+        spanMascotaEnemigo.innerHTML = "Kirby Cook"
     } else {
-        spanMascotaEnemigo.innerHTML = "Ratigueya"
+        spanMascotaEnemigo.innerHTML = "Kirby Star"
     }
     
 }
