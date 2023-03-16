@@ -1,0 +1,77 @@
+@font-face {
+    font-family: "minnie";
+    src: url("C:/Users/Usuario/Downloads/Minnie.TTF");
+  }
+  @font-face {
+    font-family: "rubik";
+    src: url("C:/Users/Usuario/Downloads/static/Rubik-Light.ttf");
+  }
+  
+  body {
+    font-family: "rubik";
+    background-color: #1A5276;
+  }
+  
+
+#seleccionar-mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    color: #F2E217;
+    font-size: 64px;
+    font-family: "minnie";
+}
+
+.subtitulo {
+    color: white;
+    font-size: 34px;
+}
+
+.tarjetas {
+    display: flex;
+    gap: 10px
+
+}
+
+.tarjeta-de-mokepon {
+    width: 207px;
+    height: 182px;
+    background: #FFC6D3;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.tarjeta-de-mokepon img {
+    width: 119px;
+    height: 62%;
+}
+
+#boton-mascota {
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    background: transparent;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid lightpink;
+    margin: 10px;
+    color: white;
+    font-family: "rubik";
+}
+
+.nombre-kirby {
+    height: 38%
+}
+
+input {
+    display:none
+}
