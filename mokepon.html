@@ -14,19 +14,19 @@
 
             <div class="tarjetas">
                 <label class="tarjeta-de-mokepon" for="Master Kirby">
-                    <p class="nombre-kirby">Master Kirby</p>
+                    <p>Master Kirby</p>
                     <img src="./imagenes/PIXEL ART DE KIRBY.png" alt="Master Kirby">
                 </label>
                 <input type="radio" name="mascota" id="Master Kirby" />
 
                 <label class="tarjeta-de-mokepon" for="Kirby Cook">
-                    <p class="nombre-kirby">Kirby Cook</p>
+                    <p>Kirby Cook</p>
                     <img src="./imagenes/pixel art kirby cocinero.png" alt="Master Kirby">
                 </label>
                 <input type="radio" name="mascota" id="Kirby Cook" />
 
                 <label class="tarjeta-de-mokepon" for="Kirby Star">
-                    <p class="nombre-kirby">Kirby Star</p>
+                    <p>Kirby Star</p>
                     <img src="./imagenes/pixel art kirby estrella.png" alt="Kirby Star">
                 </label>
                 <input type="radio" name="mascota" id="Kirby Star" />
@@ -41,27 +41,31 @@
 
             <h2 class="subtitulo"> Elige tu ataque:</h2>
 
-            <div>
+            <div class="tarjetas-ataques">
                 <button id="boton-fuego" class="boton-de-ataque">Fuego 🔥</button>
                 <button id="boton-agua" class="boton-de-ataque">Agua 💧</button>
                 <button id="boton-tierra" class="boton-de-ataque">Tierra 🌱</button>
             </div>
 
-            <div>
-                <section id="mensajes">
-                </section>
-    
-                <section id="reiniciar">
-                    <button id="boton-reiniciar">Reiniciar</button>
-                </section>
+                <div id="mensajes">
+                    <p id="resultado">Vamos!</p>
+
+                    <section id="reiniciar">
+                        <button id="boton-reiniciar">Reiniciar</button>
+                    </section>
+                </div>
+
+            <div class="ataques">
+                <div class="ataques-jugador">
+                    <p id="vidas-jugador">3</p>
+                    <p id="mascota-jugador"></p>
+                    <div id="ataques-del-jugador"></div>
+                </div>
+                <div class="ataques-ememigo">
+                    <p id="vidas-enemigo">3</p>
+                    <p id="mascota-enemigo"></p>
+                    <div id="ataques-del-enemigo"></div>
             </div>
-
-            <div>
-                <p>Tu mascota <span id="mascota-jugador"></span> tiene <span id="vidas-jugador">3</span> vidas</p>
-                <p>La mascota <span id="mascota-enemigo"></span> del enemigo tiene <span id="vidas-enemigo">3</span> vidas</p>
-            </div>
-
-
         </section>
     </body>
 </html>

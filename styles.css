@@ -7,6 +7,7 @@
     font-family: "rubik";
     src: url("C:/Users/Usuario/Downloads/static/Rubik-Light.ttf");
   }
+
   
   body {
     font-family: "rubik";
@@ -35,7 +36,7 @@
     font-size: 34px;
 }
 
-.tarjetas {
+.tarjetas, .tarjetas-ataques {
     display: flex;
     gap: 20px;
 
@@ -70,11 +71,14 @@
     margin-top: 20px;
     color: white;
     font-family: "rubik";
+    font-weight: 600;
 }
 
-.nombre-kirby {
-    height: 30%
+.tarjeta-de-mokepon:hover {
+    scale: 1.2;
+    margin: 7px;
 }
+
 
 input {
     display:none
@@ -93,4 +97,50 @@ input {
     border-color: transparent;
     width: 100px;
     font-family: "rubik";
+    font-weight: 600;
+}
+
+.boton-de-ataque:hover {
+    scale: 1.2;
+    margin: 5px;
+}
+
+#mensajes {
+    width: 230px;
+    background: hotpink;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#boton-reiniciar {
+    border: none;
+    color: #B3005E;
+    font-family: "rubik";
+    font-weight: 600;
+}
+
+.ataques {
+    display: grid;
+    grid-template-columns: 100px 100px;
+}
+
+#vidas-jugador, #vidas-enemigo {
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+.ataques-jugador, .ataques-ememigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 360px) {
+    .tarjetas, .tarjetas-ataques {
+        flex-direction: column;
+    }
 }
